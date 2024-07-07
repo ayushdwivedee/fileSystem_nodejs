@@ -32,10 +32,10 @@ switch (operation) {
     console.log(`This ${file} created`)
     break;
     case "list":
-        fileObjs = fs.readdirSync(process.cwd(), { withFileTypes: true }); 
+        filesObj= fs.readdirSync(process.cwd(), { withFileTypes: true }); 
   
         console.log("\n Current directory files:"); 
-        fileObjs.forEach(file => { 
+        filesObj.forEach(file => { 
           console.log(file); 
         }); 
   console.log(`All Files and directory name got printed.`)
